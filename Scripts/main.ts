@@ -1,5 +1,5 @@
 import 'core-js';
-import 'reflect-metadate';
+import 'reflect-metadata';
 import 'zone.js/dist/zone';
 
 import { enableProdMode } from '@angular/core';

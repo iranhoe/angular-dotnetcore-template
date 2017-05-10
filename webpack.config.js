@@ -5,12 +5,15 @@ module.exports = {
     entry: './Scripts/main.js',
     output: {
         path: path.resolve(__dirname, './wwwroot/dist'),
-        filename: 'app.module.js'
+        filename: 'app.bundle.js'
     },
     module: {
-        loaders: [
-            {test: /\.ts$/, loader: 'ts'}
-        ]
+        rules:[{
+            test: /\.ts$/,
+            use: [
+                {loader: 'ts-loader'}
+            ]
+        }]
     },
     resolve:{
         extensions: ['.js','.ts']
