@@ -1,0 +1,19 @@
+{
+    "vsicons.presets.angular": true,
+    "files.exclude": {        
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/bin/": true,
+        "**/obj/": true,
+        "**/.vscode":false,
+        //package managers
+        "**/node_modules/": true,        
+        "**/yarn.lock": true,
+        //git
+        "**/.gitignore": false,
+        "**/.git": true,
+        "**/typings": false
+    }
+}
