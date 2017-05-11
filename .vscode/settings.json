@@ -7,14 +7,14 @@
         "**/.DS_Store": true,
         "**/bin/": true,
         "**/obj/": true,
-        "**/.vscode":false,
+        "**/.vscode":true,
         //typescript
         "**/typings": true,
         //package managers
         "**/node_modules/": true,        
         "**/yarn.lock": true,
         //git
-        "**/.gitignore": false,
+        "**/.gitignore": true,
         "**/.git": true
     }
 }
