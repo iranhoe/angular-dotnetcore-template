@@ -2,8 +2,8 @@
   "name": "dot_net_core_angular",
   "version": "1.0.0",
   "scripts": {
-    "build": "tsc --rootDir src --outDir dist",
-    "build:watch": "tsc -p ./Scripts/ -w",
+    "build": "webpack --watch --progress",
+    "build:prod": "webpack -p --progress",
     "postinstall": "typings install"
   },
   "license": "MIT",
