@@ -2,10 +2,12 @@ const path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-    entry: './Scripts/main.ts',
+    entry: {
+        app: './Scripts/main.ts'
+    },
     output: {
         path: path.resolve(__dirname, './wwwroot/js/dist'),
-        filename: 'app.bundle.js'
+        filename: '[name].bundle.js'
     },
     module: {
         rules:[{
