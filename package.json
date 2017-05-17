@@ -2,7 +2,8 @@
   "name": "dot_net_core_angular",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack --watch --progress",
+    "build:dev": "webpack -d --progress",
+    "build:watch": "webpack --watch --progress",
     "build:prod": "webpack -p --progress",
     "postinstall": "typings install"
   },
