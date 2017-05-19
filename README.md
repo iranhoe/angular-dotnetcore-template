@@ -15,7 +15,7 @@ Feature
 ---
 # Pending
 
-Add webpack style bungle
+Add webpack style bundle
 Add webpack sass loader and bundle
 
 # Pending Branches
