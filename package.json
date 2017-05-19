@@ -29,6 +29,7 @@
     "@types/node": "^7.0.18",
     "extract-text-webpack-plugin": "^2.1.0",
     "node-sass": "^4.5.3",
+    "css-loader": "0.28.1",
     "sass-loader": "^6.0.5",
     "ts-loader": "2.0.3",
     "typescript": "^2.2.2",
