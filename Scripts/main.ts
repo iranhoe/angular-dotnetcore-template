@@ -1,3 +1,5 @@
+var styles = require('../Styles/main.scss');
+
 import 'core-js';
 import 'reflect-metadata';
 import 'zone.js/dist/zone';
