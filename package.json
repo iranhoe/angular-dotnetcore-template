@@ -4,8 +4,7 @@
   "scripts": {
     "build:dev": "webpack -d --progress",
     "build:watch": "webpack --watch --progress",
-    "build:prod": "webpack -p --progress",
-    "postinstall": "typings install"
+    "build:prod": "webpack -p --progress"
   },
   "license": "MIT",
   "description": "template",
@@ -29,8 +28,7 @@
   },
   "devDependencies": {
     "@types/core-js": "^0.9.34",
-    "typescript": "^2.2.2",
-    "typings": "^2.1.1",    
+    "typescript": "^2.2.2",  
     "ts-loader": "2.0.3",
 
     "webpack-dev-server": "2",

@@ -19,5 +19,11 @@ module.exports = {
     },
     resolve:{
         extensions: ['.js','.ts']
-    }
+    },
+    plugins: [
+      new webpack.ContextReplacementPlugin(
+        /angular(\\|\/)core(\\|\/)@angular/,
+        path.resolve(__dirname, './Scripts/main.ts')
+      )
+    ]
 };

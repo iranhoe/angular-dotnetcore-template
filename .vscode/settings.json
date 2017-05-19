@@ -8,8 +8,6 @@
         "**/bin/": true,
         "**/obj/": true,
         "**/.vscode":true,
-        //typescript
-        "**/typings": true,
         //package managers
         "**/node_modules/": true,        
         "**/yarn.lock": true,
