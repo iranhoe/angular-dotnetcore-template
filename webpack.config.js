@@ -1,7 +1,9 @@
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const extractSass = new ExtractTextPlugin('../../css/dist/[name].bundle.css');
 
 var webpack = require('webpack');
+
 
 module.exports = {
     entry: {
@@ -19,10 +21,13 @@ module.exports = {
             ]
         },{
             test: /\.scss$/,
-            use: [
-                {loader: 'css-loader'},
-                {loader: 'sass-loader'}
-            ]
+            use: extractSass.extract({
+                fallback: "style-loader",
+                use: [
+                    {loader: 'css-loader'},
+                    {loader: 'sass-loader'}
+                ]
+            })
         }]
     },
     resolve:{
@@ -32,6 +37,7 @@ module.exports = {
       new webpack.ContextReplacementPlugin(
         /angular(\\|\/)core(\\|\/)@angular/,
         path.resolve(__dirname, './Scripts/main.ts')
-      )
+      ),
+      extractSass
     ]
 };
